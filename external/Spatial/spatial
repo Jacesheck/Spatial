@@ -1,0 +1,15 @@
+#pragma once
+#include <vector>
+
+typedef struct {
+    float x, y, z;
+} IMU_acc;
+
+class Spatial{
+
+    public:
+    
+    std::vector<IMU_acc> buffer;
+    bool connect(char *port, int baudrate);
+    bool poll();
+};

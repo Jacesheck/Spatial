@@ -1,0 +1,1 @@
+add_library(SpatialLib rs232/rs232.c an_packet_protocol.c spatial_packets.c spatial.cpp)
